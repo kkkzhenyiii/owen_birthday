@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2023/06/23 歐文誕辰日</title>
+    <style>
+        .box {
+            width: 320px;
+            height: 320px;
+            margin: 25vh auto;
+            background-color: pink;
+            border-radius: 50%;
+            position: relative;
+            overflow: hidden;
+            
+        }
+
+        img {
+            vertical-align: bottom;
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            object-position: center;
+        }
+
+        .pic {
+            position: absolute;
+            width: fit-content;
+            height: fit-content;
+            /* border: 1px solid red; */
+            margin: auto;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            animation: circle 20s linear infinite;          
+        }
+
+        .picUs {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            /* border: 1px solid red; */
+            margin: auto;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            animation: rotate 1s ease-in-out infinite alternate;
+
+        }
+
+        @keyframes rotate {
+            from {
+                transform: rotate(-10deg);
+            }
+            
+            to {
+                transform: rotate(10deg);
+            }
+        }
+
+        @keyframes circle {
+            0% {
+                transform: rotate(0);
+            }
+
+            25% {
+                transform: rotate(90deg);
+            }
+
+            50% {
+                transform: rotate(180deg);
+            }
+
+            75% {
+                transform: rotate(270deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="pic">
+            <img src="circle.png" alt="">
+        </div>
+        <div class="picUs">
+            <img src="five.png" alt="">
+        </div>
+    </div>
+</body>
+
+</html>
